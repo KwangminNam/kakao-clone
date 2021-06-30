@@ -1,0 +1,17 @@
+.friends__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:60px 20px 25px 25px;
+    margin-bottom:15px;
+}
+
+.friends__header>h1{
+    font-size:28px;
+    font-weight:600;
+}
+
+.friends__header div span{
+    margin-left:25px;
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="status__bar">
+        <div class="status__bar__col">
+            <span>No service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status__bar__col">
+            <span>3:37</span>
+            <!-- icon -->
+        </div>
+        <div class="status__bar__col">
+            <span>77%</span>
+            <i class="fas fa-battery-three-quarters"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <header class="welcome__header">
+        <h1>Welocme to KaKaoTalk</h1>
+        <p>If you have a KaKaoTalk Account, log in with your email or phone number.</p>
+    </header>
+    <form id="login_form" action="friends.html" method="get">
+        <input name="username" type="text"  placeholder="Email or Phone Number">
+        <input name="Password" type="password" placeholder="Password">
+        <input type="submit" value="로그인">
+        <a href="#">Find kakaotalk Account or Password</a>
+    </form>
+</body>
+</html>

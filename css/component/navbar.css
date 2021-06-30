@@ -1,0 +1,37 @@
+
+.friends__nav{
+    background-color: #f9f9fa;
+    padding:20px 50px;
+    border-top:1px solid rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width:100%;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.friends__nav>ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.friends__nav>ul>li{
+     color:#2e363e;
+     position: relative;
+}
+
+.num1{
+    position: absolute;
+    left:15px;
+    bottom:10px;
+}
+
+.num2{
+    display:block;
+    width:10px;
+    height:10px;
+    border-radius:5px;
+    background-color:tomato;
+    position: absolute;
+    right:-7px;
+    bottom:25px;
+}

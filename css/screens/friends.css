@@ -1,0 +1,17 @@
+.friends_screen{
+    padding:0px var(--horizontal-space);
+}
+
+#fr_display_box{
+    text-align: center;
+    display: block;
+    background-color:#fafafa;
+    padding:15px 0;
+    font-size:16px;
+    margin-bottom:10px;
+    margin-top:-15px; 
+}
+
+#fr_display_box>i{
+    color:rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,57 @@
+.welcome__header{
+    margin:90px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome__header>h1{
+    margin-bottom:20px;
+    font-size: 25px;
+    font-weight:500;
+}
+
+.welcome__header>p{
+    width:60%;
+    opacity: 0.7;
+}
+
+#login_form{
+    display: flex;
+    flex-direction: column;
+    margin:0px 30px;
+}
+
+#login_form input{
+    padding:15px 0;
+    border:none;
+    border-bottom:1px solid rgba(0, 0, 0, 0.2);
+    font-size:18px;
+    margin-bottom:25px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#login_form input:not([type="submit"]){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+
+#login_form input::placeholder{
+    color:rgba(0, 0, 0, 0.5);
+}
+
+#login_form input:focus{
+    border-color:var(--yellow);
+}
+
+#login_form input[type="submit"]{
+    background-color:var(--yellow);
+    cursor: pointer;
+    padding:20px 0;
+    border-radius: 5px;
+}
+
+#login_form>a{
+    text-align: center;
+}
