@@ -1,0 +1,14 @@
+.more-screen .icons_row{
+    margin-top:35px; 
+}
+
+
+.more_sugg{
+    margin-top: 50px;
+    border-top:1px solid rgba(0, 0, 0, 0.5);
+    padding-top:40px;
+}
+
+.more_sugg>h4{
+    margin-bottom:30px;
+}
