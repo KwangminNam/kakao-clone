@@ -12,3 +12,30 @@
 .more_sugg>h4{
     margin-bottom:30px;
 }
+
+.sugg_group{
+    display: flex;
+}
+
+.sugg__icon{
+    margin-right:30px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.icon_img{
+    width:60px;
+    height:60px;
+    background-color:var(--yellow);
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.icon_img i{
+    font-size:32px;
+    color:#fff;
+}
