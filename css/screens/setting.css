@@ -16,3 +16,11 @@
 .add_text{
     opacity:0.5;
 }
+
+.setting_list2{
+    margin-top:50px;
+}
+
+.setting_list2>li{
+    padding :31px 0;
+}
