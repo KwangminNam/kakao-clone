@@ -25,7 +25,6 @@
     top:0;
     width:100%;
     box-sizing: border-box;
-    background-color: #abc1d1;
 }
 
 .main_chatting{
@@ -103,7 +102,73 @@
     flex-direction: row-reverse;
 }
 
+
 .mssg-row__own .mssg_bubble{
     margin-right:0;
     margin-left:5px;
 }
+
+.reply{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding:5px 25px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.reply i{
+    opacity: 0.5;
+}
+
+
+.reply .reply_box:first-child{
+    width:10%;
+}
+
+.reply .reply_box:last-child{
+    width:90%;
+    position: relative;
+}
+
+.reply input{
+    padding:14px;
+    width:100%;
+    border:1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.reply_box:last-child > i,
+.reply_box:last-child button{
+    position: absolute;
+    right:3px;
+    top:2px;
+}
+
+.reply_box:last-child > i{
+    right:50px;
+    top:15px;
+}
+
+.reply_box button{
+    background-color: var(--yellow);
+    border:none;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.reply_box button i{
+    opacity: 1;
+}
+
+.reply_box button:focus,
+.reply_box button:active{
+    outline: none;
+}
+
