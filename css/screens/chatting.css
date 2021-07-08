@@ -17,7 +17,7 @@
 
 #chatting_screen{
     background-color:#abc1d1;
-    height: 1000vh;
+    height: 100vh;
 }
 
 #chatting_screen .alt-header,.status__bar{
@@ -27,11 +27,24 @@
     box-sizing: border-box;
 }
 
+@keyframes fadeIn{
+    from{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .main_chatting{
     margin-top:130px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 0.8s linear;
 }
 
 .chats_timeStamp{
@@ -47,10 +60,24 @@
     z-index: 2;
 }
 
+
+@keyframes comeMsg{
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .mssg-row{
     width: 100%;
     display: flex;
     margin-bottom:25px;;
+    animation: comeMsg 1s ease-in-out;
 }
 
 .mssg-row img{
@@ -65,6 +92,13 @@
     font-size:14px;
     margin-bottom:7px;
     display: block;
+}
+
+
+
+
+.msg_contents{
+  
 }
 
 .mssg_info{
@@ -87,8 +121,20 @@
 }
 
 
+@keyframes mssgComeOwn{
+    from{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
 .mssg-row__own{
     justify-content: flex-end;
+    animation: mssgComeOwn 2s ease-in-out;
 }
 
 
@@ -118,6 +164,7 @@
     padding:5px 25px;
     align-items: center;
     box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
 }
 
 .reply i{
@@ -140,6 +187,7 @@
     border:1px solid rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     box-sizing: border-box;
+    transition: all 1s ease-in-out ;
 }
 
 .reply_box:last-child > i,
@@ -172,3 +220,26 @@
     outline: none;
 }
 
+
+.reply .reply_box:first-child,
+.reply .fa-smile-beam,
+.reply button{
+    transition:opacity 0.3s ease-in-out;
+}
+
+
+
+.reply:focus-within .reply_box:first-child,
+.reply:focus-within .fa-smile-beam,
+.reply:focus-within button{
+    opacity: 0;
+}
+
+.reply:focus-within input{
+    width:98vh;
+    transform:translateX(-13%)  translateY(-80px);
+}
+
+.reply:focus-within{
+    transform: translateY(80px);
+}

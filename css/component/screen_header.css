@@ -15,3 +15,20 @@
     margin-left:25px;
 }
 
+
+
+@keyframes spinS{
+    from{
+        transform: none;
+    }
+
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+.friends__header div a span .fa-cog{
+    animation:spinS 2s linear infinite;
+    font-size: 23px;
+}

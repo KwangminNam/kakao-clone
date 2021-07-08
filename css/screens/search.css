@@ -100,3 +100,25 @@
 .open_post_heart span{
     margin-left:12px;
 }
+
+.open_post_heart i{
+    animation:heartBeat 1s linear infinite;
+}
+
+@keyframes heartBeat{
+    0%{
+        color:#fff;
+        transform:none;
+    }
+
+    50%{
+        color:red;
+        transform:scale(2);
+    }
+
+    100%{
+        color:#fff;
+        transform: none;
+    }
+}
+
