@@ -8,6 +8,8 @@
     <!-- font awsome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/common,.js"></script>
 </head>
 <body>
     <div class="status__bar">
@@ -54,10 +56,10 @@
         <div class="friends_channel">
             <div>
                 <span>Channel</span>
-                <i class="fas fa-chevron-up fa-xs"></i>
+                <i class="fas fa-chevron-up fa-xs" id="arrow_bottom"></i>
             </div>
         </div>
-        <div class="user-component">
+        <div class="user-component" id="sub_user-component">
             <div class="user-component_box">
                 <img src="img/ch.png" alt="photo" class="user_pic--sm">
                 <div class="user-component_text">
