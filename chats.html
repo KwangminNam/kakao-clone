@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chats</title>
     <!-- font awsome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
 </head>
+
 <body>
     <div class="status__bar">
         <div class="status__bar__col">
@@ -36,10 +41,10 @@
             </a>
         </div>
     </header>
-   
+
     <main class="main_screen">
         <a href="chatting.html">
-            <div class="user-component">
+            <div class="user-component" id="chat_thumNail">
                 <div class="user-component_box">
                     <img src="img/spidy.jpg" alt="photo" class="user_pic user_pic--xl">
                     <div class="user-component_text">
@@ -117,8 +122,9 @@
             </li>
         </ul>
     </nav>
-        <div id="splash-screen">
-            <i class="fas fa-comments"></i>
-        </div>
+    <div id="splash-screen">
+        <i class="fas fa-comments"></i>
+    </div>
 </body>
+
 </html>

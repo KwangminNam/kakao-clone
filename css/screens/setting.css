@@ -5,6 +5,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+}
+
+.setting_li:hover{
+    background-color: bisque;
+    border-radius:5px;
+    box-sizing: border-box;
+    width:100%;
 }
 
 .setting_li i{
